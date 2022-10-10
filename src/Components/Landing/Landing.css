@@ -1,0 +1,55 @@
+
+.swiper {
+    width: 100%;
+    height: 90vh;
+    background: #000;
+    z-index: -5;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+  
+  
+  .slidertext{
+    position: absolute;
+    top:170px;
+    left:120px;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .slidertext2{
+    float: right;
+    position: absolute;
+    top:170px;
+    /* left:600px; */
+    right:90px;
+    bottom: 0;
+  }
+  .swiper-slide .title {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-weight: 300;
+  }
+  
+  .swiper-slide .subtitle {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    max-width: 600px;
+  }
+  
+  .hirebtn{
+    border-radius: 20px;
+    background-color: crimson;
+    color: white;
+    border: 0px;
+  }

@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.logo{
+  font-size: 24px;
+  font-weight: 600;
+  background-color: transparent;
+  margin-top: 10px;
+}
+.header {
+  position: sticky;
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); */
+  /* background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%); */
+  /* background: radial-gradient(circle at 10% 20%, rgb(151, 10, 130) 0%, rgb(33, 33, 33) 100.2%); */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  color:white;
+  overflow: hidden;
+}
+
+.header-bg {
+  background: linear-gradient(74.3deg, rgb(68, 17, 28) 17.4%, rgb(95, 24, 40) 34.7%, rgb(122, 31, 51) 51.8%, rgb(149, 38, 62) 67.4%, rgb(163, 41, 68) 89.6%);
+}
+.header ul li a,.header ul li a:after,.header ul li a:before{
+    transition: all .3s;
+}
+.header ul li a:hover{
+  color: orangered;
+  text-decoration: none;
+}
+.header ul li a{
+  position: relative;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins',sans-serif;
+  color:white;
+}
+.header ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background-color: orangered;
+  height: 2px;
+}
+.header ul li a:hover:after{
+ width: 100%;
+}
+.header .nav-menu {
+  display: flex;
+}
+.header .nav-item {
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+ 
