@@ -13,7 +13,7 @@ function Header() {
     window.addEventListener('scroll', changeColor)
   return (
   <div className={color ? 'header header-bg' : 'header'}>
-  <nav className='navbar navbar-expand-lg p-0'>
+  <nav className='navbar navbar-expand-lg ftco-navbar-light scrolled awake p-0'>
     <div className='col-2'>
       <p className='logo'>LOGO</p>
           {/* <img src="Logo.png" width="80px" height="80px" className='logoimg' alt='logo' /> */}
@@ -24,19 +24,19 @@ function Header() {
     <div class="collapse navbar-collapse  col-10 justify-content-end" id="navbarSupportedContent">
       <ul className="nav-menu navbar-nav list-unstyled ">
           <li className='nav-item'>
-              <a href='#'className='nav-link'><span>Home</span></a>
+              <a href='#Landingsect'className='nav-link'><span>Home</span></a>
           </li>
           <li className='nav-item'>
-              <a href='#about' className='nav-link'><span>About</span></a>
+              <a href='#Aboutsect' className='nav-link'><span>About</span></a>
           </li>
           <li className='nav-item'>
-              <a href='#testimonials' className='nav-link'><span>Skills</span></a>
+              <a href='#Skillssect' className='nav-link'><span>Skills</span></a>
           </li>
           <li className='nav-item'>
-              <a href='#demo' className='nav-link'><span>Services</span></a>
+              <a href='#ServiceSect' className='nav-link'><span>Services</span></a>
           </li>
           <li className='nav-item' >
-              <a href='#demo' className='nav-link'><span>Projects</span></a>
+              <a href='#ProjectsSect' className='nav-link'><span>Projects</span></a>
           </li>
           <li className='nav-item'>
               <a href='#demo' className='nav-link'><span>Contact</span></a>

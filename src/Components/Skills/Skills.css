@@ -1,0 +1,27 @@
+.SkillsSect{
+  
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    .overfs {
+        overflow-x: auto;
+    }
+}
+
+.percentagediv{
+    height: 120px;
+    max-height: 150px;
+
+}
+.skillcard{
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    border-radius: 15px;
+    color:white;
+}
+.seccard{
+    background-color: transparent;
+}

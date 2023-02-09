@@ -11,7 +11,7 @@ import "./Landing.css"
 function Landing() {
     
   return (
-    <Swiper
+    <Swiper id='Landingsect'
         // style={{
         //   "--swiper-navigation-color": "#fff",
         //   "--swiper-pagination-color": "#fff",
@@ -23,12 +23,12 @@ function Landing() {
             disableOnInteraction: false,
           }}
         modules={[Parallax,Autoplay]}
-        className="mySwiper"
+        className="mySwiper1 landingswiper"
       >
         <SwiperSlide style={{
             backgroundImage: `url("Bg1 (2).jpg")`,
             backgroundSize:'cover'
-        }}>
+        }} className='slideswiper'>
             <div className='slidertext'>
           <div className="title">
             Hello! This is Nomi
@@ -43,9 +43,9 @@ function Landing() {
           </div>
         </SwiperSlide>
         <SwiperSlide style={{
-             backgroundImage: `url("Bg1 (5).jpg")`,
+             backgroundImage: `url("Bg1(6).jpg")`,
              backgroundSize:'cover'
-        }}>
+        }} className='slideswiper'>
             <div className='slidertext2'>
           <div className="title" >
            We Design & Build Brands
