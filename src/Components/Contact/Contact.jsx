@@ -16,13 +16,16 @@ function Contact() {
       e.target.reset();
   };
   return (
-    <div className='Contactsect py-5'>
+    <div className='Contactsect py-5' id='Contactsect'>
       <div class="col-md-12 heading-section text-center text-white py-5">
-        <span class="subheading text-center">Contact Us</span>
-        <h2 class="mb-4 Mainheading">Have a Project?</h2>
-        <p className='intro'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <span class="subheading text-center" data-aos="fade-left"
+            data-aos-duration="500">Contact Us</span>
+        <h2 class="mb-4 Mainheading" data-aos="fade-right"
+            data-aos-duration="500">Have a Project?</h2>
+        <p className='intro' data-aos="fade-down"
+            data-aos-duration="500">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
       </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center px-3">
       <div class="container contact-form p-0 m-0">
         <div class="contact-image">
           <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />

@@ -39,7 +39,7 @@ function Header() {
               <a href='#ProjectsSect' className='nav-link'><span>Projects</span></a>
           </li>
           <li className='nav-item'>
-              <a href='#demo' className='nav-link'><span>Contact</span></a>
+              <a href='#Contactsect' className='nav-link'><span>Contact</span></a>
           </li>
       </ul>
       </div>

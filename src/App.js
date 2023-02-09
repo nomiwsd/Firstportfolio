@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import About from './Components/About/About';
 import Header from './Components/Header/Header';
 import Landing from './Components/Landing/Landing';
@@ -12,12 +13,12 @@ import Footer from './Components/Footer/Footer';
 function App() {
   const [categories,setcategories]=useState([
     {
-    cardhead1:'CSS',
-    cardhead2:'HTML',
+    cardhead1:'HTML',
+    cardhead2:'CSS',
     cardhead3:'JS',
     cardhead4:'React',
-    cardhead5:'Wordpress',
-    cardhead6:'Shopify',
+    cardhead5:'Bootstrap',
+    cardhead6:'Material UI',
     text1:'28%',
     text2:'78%',
     text3:'Last Week',
@@ -26,7 +27,11 @@ function App() {
 ])
 
   return (
+   
     <div className="App">
+       <Helmet>
+        <title>NDev</title>
+       </Helmet>
       <Header/>
      <Landing/>
      <About/>

@@ -10,11 +10,21 @@
     font-size: 14px;
     font-weight: 600;
     font-family: 'Poppins',sans-serif;
+    
 
 }
 .Footerlinks li {
     padding-bottom:5px ;
+    color: black !important;
 }
+.linkss ul li a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+    color:black !important;
+    margin-left: 5px;
+  }
 .socialicons{
     margin-right: 5px;
 }

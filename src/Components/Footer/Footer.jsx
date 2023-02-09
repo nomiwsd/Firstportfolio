@@ -11,14 +11,22 @@ function Footer() {
             <h4 className='footerhead text-start'>Lets Talk About </h4>
             <p className='text-start'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         </div>
-        <div className="col-lg-2 col-12">
+        <div className="col-lg-2 col-12 linkss">
           <h4 className='footerhead text-start'>Links</h4>
             <ul className='Footerlinks  text-start p-0'>
-                <li><FaGreaterThan className='arrowsign'/> Home</li>
-                <li><FaGreaterThan className='arrowsign'/> About</li>
-                <li><FaGreaterThan className='arrowsign'/> Skills</li>
-                <li><FaGreaterThan className='arrowsign'/> Project</li>
-                <li><FaGreaterThan className='arrowsign'/> Contact</li>
+                <li><FaGreaterThan className='arrowsign'/> 
+                <a href='#Landingsect'>Home</a>
+                </li>
+                <li><FaGreaterThan className='arrowsign'/> 
+                <a href='#Aboutsect'>About</a>
+                </li>
+                <li><FaGreaterThan className='arrowsign'/> 
+                <a href='#Skillssect'>Skills</a>
+                </li>
+                <li><FaGreaterThan className='arrowsign'/>
+                <a href='#Projectssect'>Projects</a></li>
+                <li><FaGreaterThan className='arrowsign'/>
+                <a href='#Contactsect'>Contact</a></li>
             </ul>
         </div>
         <div className="col-lg-3 col-12">

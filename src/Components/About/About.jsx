@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaSuitcase, FaHeadphonesAlt } from 'react-icons/fa';
 import { MdOutlineLoyalty, MdCardTravel, MdOndemandVideo, MdSportsSoccer } from 'react-icons/md'
 import { CgCoffee } from 'react-icons/cg'
 import { AiOutlineCalendar } from 'react-icons/ai'
 
+import ScrollTrigger from 'react-scroll-trigger';
 import "./About.css"
+import CountUp from 'react-countup';
 function About() {
+  const [counterup,setcounterup]=useState(false);
   return (
+    <ScrollTrigger onEnter={()=>{
+      setcounterup(true)
+    }}
+    onExit={()=>{
+      setcounterup(false)
+    }}>
     <div className='countersection' id='Aboutsect'>
       <div className='container py-5'>
         <div className="row m-0 p-0">
@@ -14,7 +23,10 @@ function About() {
             <div className='icondiv col-4 col-md-6 col-lg-4'><FaSuitcase className='icons text-white' />
             </div>
             <div className="text col-8 col-md-6">
-              <strong className="number" data-number="750">750</strong>
+              <strong className="number" >
+                {counterup && <CountUp start={0} end={450} duration={2} delay={0}/>}
+                
+              </strong>
               <br />
               <span className='textcounter'>Project Complete</span>
             </div>
@@ -23,10 +35,12 @@ function About() {
           <div className="col-md-3 col-12 d-flex justify-content-center align-items-center text-light mb-3">
             <div className='icondiv col-4 col-md-6 col-lg-4'><MdOutlineLoyalty className='icons  text-white' />
             </div>
-            <div className="text col-8 col-md-6 ">
-              <strong className="number" data-number="750">568</strong>
+            <div className="text col-8 col-md-6">
+              <strong className="number">
+              {counterup && <CountUp start={0} end={350} duration={2} delay={0}/>}
+              </strong>
               <br />
-              <span className='textcounter'>Happy Clients</span>
+              <span className='textcounter ms-2'>Happy Clients</span>
             </div>
           </div>
 
@@ -34,7 +48,9 @@ function About() {
             <div className='icondiv col-4 col-md-6 col-lg-4'><CgCoffee className='icons  text-white' />
             </div>
             <div className="text col-8 col-md-6">
-              <strong className="number" data-number="750">478</strong>
+              <strong className="number" >
+              {counterup && <CountUp start={0} end={680} duration={2} delay={0}/>}
+              </strong>
               <br />
               <span className='textcounter'>Cup of Coffees</span>
             </div>
@@ -44,7 +60,9 @@ function About() {
             <div className='icondiv col-4 col-md-6 col-lg-4'><AiOutlineCalendar className='icons  text-white' />
             </div>
             <div className="text col-8 col-md-6">
-              <strong className="number" data-number="750">20</strong>
+              <strong className="number" >
+              {counterup && <CountUp start={0} end={5} duration={2} delay={0}/>}
+              </strong>
               <br />
               <span className='textcounter'>Years of Experience</span>
             </div>
@@ -59,9 +77,12 @@ function About() {
           <div className="col-12 col-lg-7 py-5">
             <div className="row justify-content-start pb-3 text-white">
               <div className="col-md-12 heading-section">
-                <span className="subheading text-start">My Intro</span>
-                <h2 className="mb-4 text-start Mainheading">About Me</h2>
-                <p className='intro'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span className="subheading text-start" data-aos="fade-left"
+            data-aos-duration="500">My Intro</span>
+                <h2 className="mb-4 text-start Mainheading" data-aos="fade-right"
+            data-aos-duration="500">About Me</h2>
+                <p className='intro' data-aos="fade-up-left"
+            data-aos-duration="500">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 <div className='row'>
                   <div className='col-12 d-flex p-0 row justify-content-end mx-1'>
                     <p className='mainhead col-12 col-md-4 m-0 d-flex justify-content-start p-0'>Name:</p>
@@ -120,6 +141,7 @@ function About() {
         </div>
       </div>
     </div>
+    </ScrollTrigger>
   )
 }
 
